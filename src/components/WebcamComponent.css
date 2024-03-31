@@ -1,30 +1,50 @@
 /* WebcamComponent.css */
+
+/* Center the entire component */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ensures the component is vertically centered on the page */
+  margin: 0; /* Reset margin to remove default body margin */
+}
+
+/* Container Styles */
 .webcam-container {
-    text-align: center;
-    padding: 20px;
-  }
-  
-  .title {
-    margin-bottom: 20px;
-    color: #333;
-  }
-  
-  .login-btn {
-    margin-bottom: 20px;
-  }
-  
-  .webcam-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .webcam {
-    border: 2px solid #333;
-    margin-bottom: 20px;
-  }
-  
-  .close-btn {
-    margin-bottom: 20px;
-  }
-  
+  text-align: center; /* Align text content */
+  padding: 20px;
+}
+
+/* Title Styles */
+.title {
+  margin-bottom: 20px;
+  color: #333; /* Consider using a CSS variable for colors */
+}
+
+/* Button Styles */
+.btn {
+  margin-bottom: 20px;
+}
+
+/* Webcam Wrapper Styles */
+.webcam-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Webcam Styles */
+.webcam {
+  border: 2px solid #333; /* Consider using a CSS variable for colors */
+  margin-bottom: 20px;
+}
+
+/* Close Button Styles */
+.close-btn {
+  margin-bottom: 20px;
+}
+
+/* New Button Styles */
+.signin-btn {
+  margin-top: 10px; /* Add space between buttons */
+}

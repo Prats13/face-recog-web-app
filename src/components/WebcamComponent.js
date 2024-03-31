@@ -11,6 +11,10 @@ const WebcamComponent = () => {
     setShowWebcam(true);
   };
 
+  const handleSignInButtonClick = async () => {
+    setShowWebcam(true);
+  };
+
   const handleCapture = async () => {
     const imageSrc = webcamRef.current.getScreenshot();
     try {
@@ -21,16 +25,16 @@ const WebcamComponent = () => {
       alert('Failed to store user image');
     }
   };
-  
 
   return (
     <div>
-      <h1>Webcam SignUp</h1>
-      {!showWebcam && (
-        <Button variant="primary" onClick={handleSignUpButtonClick}>
-          SignUp with Webcam
-        </Button>
-      )}
+      <h1>Webcam SignUp/SignIn</h1>
+      <Button variant="primary" onClick={handleSignUpButtonClick}>
+        SignUp with Webcam
+      </Button>
+      <Button variant="info" onClick={handleSignInButtonClick}>
+        SignIn with Webcam
+      </Button>
       {showWebcam && (
         <div>
           <Webcam

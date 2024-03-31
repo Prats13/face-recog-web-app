@@ -1,14 +1,18 @@
 .App {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* You can keep this for additional centering */
 }
 
-.App-logo {
+.app-logo {
   height: 40vmin;
   pointer-events: none;
+  transform-origin: center;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
+  .app-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
@@ -24,7 +28,7 @@
   color: white;
 }
 
-.App-link {
+.app-link {
   color: #61dafb;
 }
 
